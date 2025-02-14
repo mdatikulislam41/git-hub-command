@@ -64,3 +64,6 @@ ul li {
 .details-content {
   background-color: var(--bg-color);
 }
+span.link {
+  color: blue;
+}
