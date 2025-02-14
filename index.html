@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git-Command</title>
+    <link rel="stylesheet" href="git.css" />
+    <link rel="icon" href="./image/Git-Icon-1788C.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="container first-padding">
+          <div class="content">
+            <details>
+              <summary>Git Clone</summary>
+              <div class="details-content">
+                <ul>
+                  <li>Collect repository <span class="link">link</span></li>
+                  <li>Go vs code then open vs code terminal</li>
+                  <li>Select Bash</li>
+                  <li>Enter bellow command</li>
+                  <li>git clone <span class="link">link</span></li>
+                  <hr />
+                  <li>Now you can modify file and finish</li>
+                  <li>Enter bello command for push</li>
+                  <li>git add .</li>
+                  <li>git commit -m "message"</li>
+                  <li>git push</li>
+                </ul>
+              </div>
+            </details>
+            <details>
+              <summary>Import Local file in Repository by VS code</summary>
+              <div class="details-content">
+                <ul>
+                  <li>Collect repository <span class="link">link</span></li>
+                  <li>open vs code terminal</li>
+                  <li>Select Bash</li>
+                  <li>Enter bellow command</li>
+                  <li>git init</li>
+                  <li>git add .</li>
+                  <li>git commit -m "Version message"</li>
+                  <li>git branch -M main</li>
+                  <li>git remote add origin <span class="link">link</span></li>
+                  <li>git push -u origin main</li>
+                </ul>
+              </div>
+            </details>
+            <details>
+              <summary>How to work with any git commit(version)</summary>
+              <div class="details-content">
+                <ul>
+                  <li>You have to find Commit Id by bello command</li>
+                  <li>git log --oneline</li>
+                  <li>Then you have to copy commit Id(17ada02)</li>
+                  <li>git checkout 17ada02 -- .</li>
+                  <hr />
+                  <li>Now you can work this commit</li>
+                </ul>
+              </div>
+            </details>
+            <details>
+              <summary>How to reset(remove) git commit</summary>
+              <div class="details-content">
+                <ul>
+                  <li>There are 2 place for reset</li>
+                  <li>1. in repository 2. Vs-Code</li>
+                  <li>but have to do this by command</li>
+                  <li>First reset for Repository commit</li>
+                  <li>You have to find Commit Id by bello command</li>
+                  <li>git log --oneline</li>
+                  <hr />
+                  <li>Then you have to copy commit Id(17ada02)</li>
+                  <li>git reset --soft 17ada02</li>
+                  <li>git push --force</li>
+                  <hr />
+                  <li>Second reset for Vs code commit</li>
+                  <li>git reset --soft 17ada02</li>
+                  <li>git reset --hard 17ada02</li>
+                  <li>Note: commit will remove which one top of 17ada02</li>
+                </ul>
+              </div>
+            </details>
+            <details>
+              <summary>Work with Branch</summary>
+              <div class="details-content">
+                <ul>
+                  <li>check branch by bello command</li>
+                  <li>git branch</li>
+                  <hr />
+                  <li>Create Branch by bello command</li>
+                  <li>git checkout -b name</li>
+                  <hr />
+                  <li>
+                    <p>
+                      after Create branch you have to modify something in file
+                      then commit and push by bellow command
+                    </p>
+                  </li>
+                  <li>git add .</li>
+                  <li>git commit -m "message"</li>
+                  <li>git push origin name</li>
+                </ul>
+              </div>
+            </details>
+            <details>
+              <summary>Merge Branch</summary>
+              <div class="details-content">
+                <ul>
+                  <li>
+                    Merge মানে opening(active) branch এর সাথে অন্য একটি branch
+                    কাজ একত্রিত করা।
+                  </li>
+                  <li>নোট : Merge করার পরে add, commit এবং push করতে হবে।</li>
+                  <li>নিচের command দিয়ে merge করি</li>
+                  <li>git merge [branch]</li>
+                  <li>git add .</li>
+                  <li>git commit -m "message"</li>
+                  <li>git push</li>
+                </ul>
+              </div>
+            </details>
+            <details>
+              <summary>Delete Branch</summary>
+              <div class="details-content">
+                <ul>
+                  <li>git branch -d [branch-name]</li>
+                  <li>নোট : Merge করার পরে add, commit এবং push করতে হবে।</li>
+                  <li>নিচের command দিয়ে merge করি</li>
+                  <li>git merge [branch]</li>
+                  <li>git add .</li>
+                  <li>git commit -m "message"</li>
+                  <li>git push</li>
+                </ul>
+              </div>
+            </details>
+            <details>
+              <summary>Change working Branch</summary>
+              <div class="details-content">
+                <ul>
+                  <li>দুইটা উপায় করা যায়।</li>
+                  <li>1. কমান্ড দ্বারা 2. VS code অপশন থেকে</li>
+                  <li>git checkout [branch-name]</li>
+                  <hr />
+                  <li>
+                    VS কোডের বাম পাশের নিচে এক্টিভি branch শো করে। ঐটা থেকে
+                    চেঞ্জ করা যায়।
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
